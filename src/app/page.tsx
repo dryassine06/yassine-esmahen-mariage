@@ -23,7 +23,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative text-center text-white z-10 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">ياسين و ستيفاني</h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">ياسين و esmahen</h1>
           <p className="text-xl md:text-2xl">يتشرفان بدعوتكم لحضور حفل زفافهما</p>
           <p className="text-2xl md:text-3xl mt-4">15 يونيو 2024</p>
           <button 
