@@ -82,7 +82,7 @@ export default function Home() {
             </div>
             <h3 className="text-2xl font-semibold mb-2 text-center">الوليمة</h3>
             <p className="text-center text-gray-600">
-              2024 العشاء - يوم الاربعاء 25 ديسمبر
+               العشاء - يوم الاربعاء 25 ديسمبر 2024
             </p>
             <div className="text-center mt-4">
               <a
