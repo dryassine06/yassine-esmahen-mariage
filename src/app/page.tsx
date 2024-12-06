@@ -1,11 +1,11 @@
-"use client"
-import Image from 'next/image'
-import Link from 'next/link'
+"use client";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const scrollToEvents = () => {
-    const eventsSection = document.getElementById('events');
-    eventsSection?.scrollIntoView({ behavior: 'smooth' });
+    const eventsSection = document.getElementById("events");
+    eventsSection?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=2070"
+            src="/images/photo-1532712938310-34cb3982ef74.jpg"
             alt="صورة العروسين"
             fill
             className="object-cover"
@@ -23,10 +23,15 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative text-center text-white z-10 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">ياسين و esmahen</h1>
-          <p className="text-xl md:text-2xl">يتشرفان بدعوتكم لحضور حفل زفافهما</p>
-          <p className="text-2xl md:text-3xl mt-4">15 يونيو 2024</p>
-          <button 
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+            ياسين و إسمهان
+          </h1>
+          <p className="text-xl md:text-2xl">
+            تتشرف عائلة علي الدريدي بدعوتكم لحفل زفاف ابنهم ياسين على كريمتنا
+            إسمهان
+          </p>
+          <p className="text-2xl md:text-3xl mt-4">26 ديسمبر 2024</p>
+          <button
             onClick={scrollToEvents}
             className="mt-8 px-8 py-3 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-colors duration-300"
           >
@@ -35,104 +40,63 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Story Section */}
-      <section className="section-container bg-rose-50">
-        <div className="max-w-4xl mx-auto animate-slide-up">
-          <h2 className="heading-primary">قصتنا</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="relative h-[400px]">
-              <Image
-                src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1974"
-                alt="قصتنا"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            <div>
-              <p className="text-lg leading-relaxed">
-                التقينا في أحد أيام الصيف الجميلة، حيث تحولت مصادفة بسيطة إلى حوارات لا تنتهي. 
-                كان ذلك اليوم بداية رحلتنا الجميلة معاً. ومع كل المغامرات والضحكات والنمو المشترك، 
-                ازداد حبنا قوة وعمقاً.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Event Details Section */}
       <section id="events" className="section-container bg-rose-50">
         <h2 className="heading-primary">تفاصيل الحفل</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* Ceremony */}
           <div className="bg-white p-6 rounded-lg shadow-lg animate-slide-up">
-            <div className="relative h-[200px] mb-4">
+            <div className="relative h-[400px] mb-4">
               <Image
-                src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=2070"
+                src="/images/1.jpg"
                 alt="مكان العقد"
                 fill
                 className="object-cover rounded-lg"
               />
             </div>
-            <h3 className="heading-secondary">حفل العقد</h3>
-            <p className="mb-4">2:00 مساءً - 3:30 مساءً</p>
-            <p className="mb-4">جامع الزيتونة، المدينة العتيقة، تونس</p>
-            <a 
-              href="https://maps.google.com/?q=جامع+الزيتونة+تونس" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="button-primary"
-            >
-              عرض الموقع
-            </a>
+            <h3 className="text-2xl font-semibold mb-2 text-center">العقد</h3>
+            <p className="text-center text-gray-600">
+              يوم السبت، 21 ديسمبر 2024
+            </p>
+            <div className="text-center mt-4">
+              <a
+                href="https://maps.app.goo.gl/D4cEoKFQrM9H6tNN9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-2 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-colors duration-300"
+              >
+                عرض الموقع
+              </a>
+            </div>
           </div>
 
           {/* Reception */}
           <div className="bg-white p-6 rounded-lg shadow-lg animate-slide-up">
-            <div className="relative h-[200px] mb-4">
+            <div className="relative h-[400px] mb-4">
               <Image
-                src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=2069"
-                alt="مكان الحفل"
+                src="/images/photo-1464366400600-7168b8af9bc3.jpg"
+                alt="مكان الوليمة"
                 fill
                 className="object-cover rounded-lg"
               />
             </div>
-            <h3 className="heading-secondary">حفل الزفاف</h3>
-            <p className="mb-4">4:00 مساءً - 10:00 مساءً</p>
-            <p className="mb-4">قصر المؤتمرات، شارع الحبيب بورقيبة، تونس</p>
-            <a 
-              href="https://maps.google.com/?q=شارع+الحبيب+بورقيبة+تونس" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="button-primary"
-            >
-              عرض الموقع
-            </a>
-          </div>
-
-          {/* After Party */}
-          <div className="bg-white p-6 rounded-lg shadow-lg animate-slide-up">
-            <div className="relative h-[200px] mb-4">
-              <Image
-                src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2069"
-                alt="مكان السهرة"
-                fill
-                className="object-cover rounded-lg"
-              />
+            <h3 className="text-2xl font-semibold mb-2 text-center">الوليمة</h3>
+            <p className="text-center text-gray-600">
+              2024 العشاء - يوم الاربعاء 25 ديسمبر
+            </p>
+            <div className="text-center mt-4">
+              <a
+                href="https://maps.app.goo.gl/D4cEoKFQrM9H6tNN9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-2 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-colors duration-300"
+              >
+                عرض الموقع
+              </a>
             </div>
-            <h3 className="heading-secondary">السهرة</h3>
-            <p className="mb-4">10:00 مساءً - وقت متأخر</p>
-            <p className="mb-4">دار المرسى، المرسى، تونس</p>
-            <a 
-              href="https://maps.google.com/?q=دار+المرسى+تونس" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="button-primary"
-            >
-              عرض الموقع
-            </a>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
