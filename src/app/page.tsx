@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <h3 className="text-2xl font-semibold mb-2 text-center">العقد</h3>
             <p className="text-center text-gray-600">
-              يوم السبت، 21 ديسمبر 2024
+              يوم الاحد 22 ديسمبر 2024  
             </p>
             <div className="text-center mt-4">
               <a
