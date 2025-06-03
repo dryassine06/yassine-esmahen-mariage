@@ -8,7 +8,7 @@ const arabic = IBM_Plex_Sans_Arabic({
 })
 
 export const metadata: Metadata = {
-  title: 'حفل زفاف ياسين وإسمهان',
+  title: 'حفل زفاف  سيف ونسرين',
   description: 'انضموا إلينا في يومنا المميز لنحتفل بحبنا والتزامنا',
 }
 
