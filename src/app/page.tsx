@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,6 +11,11 @@ export default function Home() {
 
   return (
     <div className="w-full">
+      {/* Page Title */}
+      <Head>
+        <title>زواج سيف ونسرين</title>
+      </Head>
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0">
@@ -27,7 +33,7 @@ export default function Home() {
             سيف الدين و نسرين
           </h1>
           <p className="text-xl md:text-2xl">
-            تتشرف عائلة رضا معتوق بدعوتكم لحفل زفاف ابنهم سيف الدين على كريمتنا نسرين
+            تتشرف عائلة رضا معتوق و مصطفى الرياحي باستدعائكم لزفاف ابنيهما سيف ونسرين
           </p>
           <p className="text-2xl md:text-3xl mt-4">28 جوان 2025</p>
           <button
@@ -73,7 +79,7 @@ export default function Home() {
             <h3 className="text-2xl font-semibold mb-2 text-center">حفل زفاف وعشاء</h3>
             <p className="text-center text-gray-600">
               يوم السبت 28 جوان 2025<br />
-              المكان: مرناق - دار ضيافة، مقابل مقهى أهلاً
+              المكان: مرناق - دار ضيافة، مقابل مقهى الفلاح
             </p>
           </div>
         </div>
