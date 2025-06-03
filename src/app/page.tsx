@@ -24,13 +24,12 @@ export default function Home() {
         </div>
         <div className="relative text-center text-white z-10 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
-            ياسين و إسمهان
+            سيف الدين و نسرين
           </h1>
           <p className="text-xl md:text-2xl">
-            تتشرف عائلة علي الدريدي بدعوتكم لحفل زفاف ابنهم ياسين على كريمتنا
-            إسمهان
+            تتشرف عائلة رضا معتوق بدعوتكم لحفل زفاف ابنهم سيف الدين على كريمتنا نسرين
           </p>
-          <p className="text-2xl md:text-3xl mt-4">26 ديسمبر 2024</p>
+          <p className="text-2xl md:text-3xl mt-4">28 جوان 2025</p>
           <button
             onClick={scrollToEvents}
             className="mt-8 px-8 py-3 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-colors duration-300"
@@ -44,56 +43,38 @@ export default function Home() {
       <section id="events" className="section-container bg-rose-50">
         <h2 className="heading-primary">تفاصيل الحفل</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {/* Ceremony */}
+          {/* عقد القران والعشاء */}
           <div className="bg-white p-6 rounded-lg shadow-lg animate-slide-up">
             <div className="relative h-[400px] mb-4">
               <Image
                 src="/images/1.jpg"
-                alt="مكان العقد"
+                alt="مكان العقد والعشاء"
                 fill
                 className="object-cover rounded-lg"
               />
             </div>
-            <h3 className="text-2xl font-semibold mb-2 text-center">العقد</h3>
+            <h3 className="text-2xl font-semibold mb-2 text-center">العقد والعشاء</h3>
             <p className="text-center text-gray-600">
-              يوم الاحد 22 ديسمبر 2024  
+              يوم الخميس 26 جوان 2025<br />
+              المكان: منزل العائلة مجاز الباب - حي الصدق
             </p>
-            <div className="text-center mt-4">
-              <a
-                href="https://maps.app.goo.gl/D4cEoKFQrM9H6tNN9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-6 py-2 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-colors duration-300"
-              >
-                عرض الموقع
-              </a>
-            </div>
           </div>
 
-          {/* Reception */}
+          {/* حفل زفاف وعشاء */}
           <div className="bg-white p-6 rounded-lg shadow-lg animate-slide-up">
             <div className="relative h-[400px] mb-4">
               <Image
                 src="/images/photo-1464366400600-7168b8af9bc3.jpg"
-                alt="مكان الوليمة"
+                alt="مكان حفل الزفاف والعشاء"
                 fill
                 className="object-cover rounded-lg"
               />
             </div>
-            <h3 className="text-2xl font-semibold mb-2 text-center">الوليمة</h3>
+            <h3 className="text-2xl font-semibold mb-2 text-center">حفل زفاف وعشاء</h3>
             <p className="text-center text-gray-600">
-               العشاء - يوم الاربعاء 25 ديسمبر 2024
+              يوم السبت 28 جوان 2025<br />
+              المكان: مرناق - دار ضيافة، مقابل مقهى أهلاً
             </p>
-            <div className="text-center mt-4">
-              <a
-                href="https://maps.app.goo.gl/D4cEoKFQrM9H6tNN9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-6 py-2 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-colors duration-300"
-              >
-                عرض الموقع
-              </a>
-            </div>
           </div>
         </div>
       </section>
