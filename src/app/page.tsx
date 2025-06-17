@@ -13,7 +13,7 @@ export default function Home() {
     <div className="w-full">
       {/* Page Title */}
       <Head>
-        <title>زواج سيف ونسرين</title>
+        <title>زواج سيف وحرمه</title>
       </Head>
 
       {/* Hero Section */}
@@ -30,10 +30,10 @@ export default function Home() {
         </div>
         <div className="relative text-center text-white z-10 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
-            سيف الدين و نسرين
+          سيف الدين و حرمه
           </h1>
           <p className="text-xl md:text-2xl">
-            تتشرف عائلة رضا معتوق و مصطفى الرياحي باستدعائكم لزفاف ابنيهما سيف ونسرين
+            تتشرف عائلة رضا معتوق و مصطفى الرياحي باستدعائكم لزفاف ابنيهما سيف وحرمه
           </p>
           <p className="text-2xl md:text-3xl mt-4">28 جوان 2025</p>
           <button
